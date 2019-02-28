@@ -72,8 +72,8 @@ function findDupes(booktitle, index){
     // For each item in the cart list, check to see if the given booktitle is a match
     for(let i = 0; i < cartList.length; i++){
         if(item.text() === booktitle){
-            // Alert the user if it already exists.
-            alert(booktitle + ' already exists in cart!');
+            // Alert the user if the book title already in the shppoing bag
+            alert(booktitle + ' is already in your shopping bag!');
         }else{
             // Create the button/event listener for the button in the shopping cart
             cartList.append(`<button id="btn-${index}" class="cart m-2 btn-${index} btn-outline-primary">${booktitle}</button>`);
